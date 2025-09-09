@@ -45,5 +45,9 @@ def logout():
 def about():
     return render_template("about.html")
 
+@app.route("/hello")
+def hello():
+    return "Hello from Azure!"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
